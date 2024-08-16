@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./resources/css/style.css">
+    <title>P-P-T</title>
+</head>
+<body>
+    <div class="Cont_vid">
+        <video class="Vid" autoplay mute loop>
+            <source src="./resources/vid/Aura.mp4">
+        </video>
+    </div>
+    <section class="content">
+        <h1>Piedra - Papel - Tijeras</h1>
+
+        <section class="opciones">        
+            <button onclick="jugar('Piedra')">✊</button>
+            <button onclick="jugar('Papel')">✋</button>
+            <button onclick="jugar('Tijeras')">✌️</button>
+        </section>
+
+        <p id="ContadorJugador">Tu: </p>
+        <p id="ContadorIA">LA IA: </p>
+        <p id="resultado"></p>
+
+        <div class="puntaje">Tu puntaje: 
+            <span id="puntajeJugador">0</span>
+        </div>
+        <div class="puntaje">Puntaje IA: 
+            <span id="puntajeIA">0</span>
+        </div>
+    </section>
+    
+    <script src="./js/juego.js"></script>
+</body>
+</html>
